@@ -1,0 +1,69 @@
+{
+    "name": "Mass Reply for Gmail",
+    "description": "Enables Gmail users to send a reply to multiple senders at once! Also preserves the subject and content of each message.",
+    "version": "2.0.0",
+    "content_scripts": [{
+        "matches": [
+            "https://mail.google.com/*", "https://inbox.google.com/*"
+        ],
+        "js": [
+            "vendor/jquery/jquery.min.js",
+            "vendor/toastr/toastr.min.js",
+            "vendor/dropzone/dropzone.min.js",
+            "inboxsdk/platform-implementation.js",
+            "inboxsdk/inboxsdk.js",
+            "scripts/storage.js",
+            "scripts/gmail.js"
+        ],
+        "css": [
+            "vendor/toastr/toastr.min.css",
+            "gmail.css",
+            "vendor/dropzone/dropzone.min.css"
+        ],
+        "run_at": "document_start"
+    }, {
+        "matches": [
+            "https://www.google.com/robots.txt*"
+        ],
+        "js": [
+            "oauth2/oauth2_inject.js"
+        ],
+        "css": [
+            "oauth2/robot.css"
+        ],
+        "run_at": "document_start"
+    }],
+    "web_accessible_resources": [
+        "reply.png",
+        "oauth2/oauth2.html"
+    ],
+    "icons": {
+        "16": "massreply16.png",
+        "48": "massreply48.png",
+        "128": "massreply128.png"
+    },
+    "permissions": [
+        "storage", 
+        "identity",
+        "https://mail.google.com/",
+        "https://inbox.google.com/",
+		"https://www.googleapis.com/upload/gmail/v1/*",
+        "tabs"
+    ],
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "massreply128.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "oauth2/oauth2.js",
+            "scripts/base64.min.js",
+            "vendor/googleAPI/api.js",
+            "scripts/gmailbody.js",
+            "scripts/storage.js",
+            "scripts/googleapis.js",
+            "background.js"
+        ]
+    }
+}

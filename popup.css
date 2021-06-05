@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+body.popup {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
+}
+h3 {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.container {
+    min-width: 300px;
+    padding: 0;
+}
+.panel {
+    margin-bottom: 0px;
+}
+.alert.alert-info {
+    padding: 10px;
+}
+.alert.alert-info p {
+    margin: 0px !important;
+}
+.panel-default>.panel-heading {
+    background: transparent;
+}
+.checkbox label {
+    line-height: 22px;
+    height: 22px;
+}
+.checkbox label input {
+    position: relative;
+    top: 2px;
+}
+.version {
+    color: #999;
+}
+.google {
+    text-align: center;
+    margin: 20px auto;
+}
+.mass-actions, .google, .account {
+    display: none;
+}
+.mass-actions h5 {
+    margin: 0 0 5px 0;
+}
+.google button {
+    width: 200px;
+    height: 44px;
+    border: none;
+    background: url(../google.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.account {
+    border: none;
+    cursor: pointer;
+    min-height: 35px;
+    outline: 0;
+    padding: 12px 10px 13px;
+}
+.account img {
+    border-radius: 50px;
+    height: 36px;
+    width: 36px;
+}
+.account .ppic {
+    vertical-align: top;
+    /*border: 1px solid #ccc;
+    background-color: #ccc;*/
+}
+.account .gmail-icon {
+    vertical-align: top;
+    height: 42px;
+    width: 42px;
+}
+.name {
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 180px;
+    white-space: nowrap;
+}
+.name div {
+    font-weight: 600;
+    font-size: 14px;
+}
+.name span {
+    font-size: 12px;
+}
+.name a {
+    font-size: 10px;
+    color: #a3a3ab;
+    text-decoration: none;
+}
+.name a:hover {
+    text-decoration: underline;
+}

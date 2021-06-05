@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mass Reply for Gmail
+        </title>
+        <link href="vendor/bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="popup.css" rel="stylesheet" type="text/css"/>
+        <script src="vendor/jquery/jquery.min.js" type="text/javascript">
+        </script>
+        <!-- <script src="https://apis.google.com/js/api.js" type="text/javascript">
+        </script> -->
+        <script src="oauth2/oauth2.js" type="text/javascript">
+        </script>
+        <script src="scripts/storage.js" type="text/javascript">
+        </script>
+        <script src="scripts/googleapis.js" type="text/javascript">
+        </script>
+        <script src="scripts/popup.js" type="text/javascript">
+        </script>
+    </head>
+    <body class="popup">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>
+                        Mass Reply
+                        <small class="version">
+                        </small>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="account">
+                        <img class="ppic" src="massreply48.png">
+                        </img>
+                        <div class="name">
+                            <div>
+                            </div>
+                            <span>
+                            </span><br/>
+                            <!-- <a class="sign-off" href="#">sign out</a> -->
+                        </div>
+                        <img class="gmail-icon" src="gmail.png">
+                    </div>
+                    <div class="google">
+                        <div>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="alert alert-info mass-actions">
+                        <h5>Action After Reply:</h5>
+                        <div class="checkbox">
+                            <label>
+                                <input class="actions" name="mark_as_read" type="checkbox">
+                                    Mark as read
+                                </input>
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input class="actions" name="archive" type="checkbox">
+                                    Archive
+                                </input>
+                            </label>
+                        </div>
+                    </div>
+                    <hr/>
+                    <button id="logout">Logout</button>
+                    <small>
+                        The #1 email management tool for consultants
+                    </small>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
